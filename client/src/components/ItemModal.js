@@ -12,7 +12,6 @@ import
 } from "reactstrap";
 import { connect } from "react-redux";
 import { addItem } from "../actions/itemActions";
-import uuid from "uuid";
 
 
 // This is technical a "Container," a React Component
@@ -46,7 +45,6 @@ class ItemModal extends Component
         e.preventDefault();
 
         const newItem = {
-            id: uuid(),
             name: this.state.name
         }
 
